@@ -16,7 +16,6 @@ var settingsConfig  = require('./config/settings');
 var adminConfig     = require('./config/admin');
 
 var app             = express();
-
 // Connect to mongodb
 mongoose.connect(database);
 
@@ -32,7 +31,6 @@ app.use(methodOverride());
 app.use(express.static(__dirname + '/app/client'));
 
 // Routers =====================================================================
-
 var apiRouter = express.Router();
 require('./app/server/routes/api')(apiRouter);
 app.use('/api', apiRouter);
