@@ -1,3 +1,4 @@
 have to whitelist your ip address (address of thing running quill) before being able to connect
 have to have git assume-unchanged on .env because the atlas password and username go there
 need to find a nice way to specify a prod db and a dev db
+blah blah blah
