@@ -37,9 +37,11 @@
     "dev": "nodemon app.js",
     "watch": "gulp server",
     "prod": "gulp build && node app.js",
-    "config": "cp .env.config .env"
+    "config": "cp .env.config .env",
+    "lint": "./node_modules/.bin/eslint './**/*.js'"
   },
   "devDependencies": {
+    "eslint": "^6.5.1",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^4.0.0",
     "gulp-concat": "^2.6.1",
