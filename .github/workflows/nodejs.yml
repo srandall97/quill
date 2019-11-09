@@ -1,6 +1,6 @@
 name: Node CI
 
-on: [push,pull_request]
+on: [pull_request]
 
 jobs:
   build:
@@ -14,7 +14,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: Linting
-      uses: gimenete/eslint-action@1.0
+      uses: srandall97/eslint-action@latest
 
       env:
         CI: true
